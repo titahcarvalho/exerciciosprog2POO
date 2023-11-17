@@ -1,9 +1,9 @@
 package exercicios_progr2;
 public class Disciplinas {
 	
-		String nome;
-		int cargaHoraria;
-		String codigo;
+		private String nome;
+		private int cargaHoraria;
+		private String codigo;
 	
 	public Disciplinas(String nome, int cargaHoraria, String codigo) {
 		
@@ -12,7 +12,29 @@ public class Disciplinas {
 		this.cargaHoraria = cargaHoraria;
 	}
 
-	public static void main(String[] args) {  //o construtor deve ser fora do método main
+	public String getNome() {
+		return nome;
 	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getCargaHoraria() {
+		return cargaHoraria;
+	}
+
+	public void setCargaHoraria(int cargaHoraria) {
+		this.cargaHoraria = cargaHoraria;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
 	
 }

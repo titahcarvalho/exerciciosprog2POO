@@ -4,20 +4,39 @@ public class Main {
 
 	public static void main(String[] args) {
 		Aluno estudante = new Aluno();
-        estudante.nome = "Angélica de Carvalho Teixeira";
-        estudante.matricula = "22.2.8015";       
-        estudante.curso = new Cursos("Sistemas de Informação", 0, 8); //no caso o código do curso foi alterado pelo numero aleatório na classe Cursos
-        estudante.disciplina = new Disciplinas("Programação de Computadores 2",60,"CSI102");
+        estudante.setNome ("Angélica de Carvalho Teixeira");
+        estudante.setMatricula ("22.2.8015");       
+        estudante.setCurso (new Cursos("Sistemas de Informação", 0, 8)); //no caso o código do curso foi alterado pelo numero aleatório na classe Cursos
+        estudante.setDisciplina (new Disciplinas("Programação de Computadores 2",60,"CSI102"));
      
-        System.out.println("Nome: " + estudante.nome);
-        System.out.println("Matrícula: " + estudante.matricula);
-        System.out.println("Curso: " + estudante.curso.nome);
-        System.out.println("Código do curso: " + estudante.curso.codigo);  
-        System.out.println("Duração: " + estudante.curso.duracao + " semestres.");
+        System.out.println("Nome: " + estudante.getNome());
+        System.out.println("Matrícula: " + estudante.getMatricula());
+        System.out.println("Curso: " + estudante.getCurso().getNome());
+        System.out.println("Código do curso: " + estudante.getCurso().getCodigo());  
+        System.out.println("Duração: " + estudante.getCurso().getDuracao() + " semestres.");
         System.out.println("----------------------------------------------------");
-        System.out.println("Disciplinas matriculadas: " + estudante.disciplina.nome);
-        System.out.println("Carga Horária Semestral: " + estudante.disciplina.cargaHoraria + " horas.");
-        System.out.println("Código da disciplina: " + estudante.disciplina.codigo);
+        System.out.println("Disciplinas matriculadas: " + estudante.getDisciplina().getNome());
+        System.out.println("Carga Horária Semestral: " + estudante.getDisciplina().getCargaHoraria() + " horas.");
+        System.out.println("Código da disciplina: " + estudante.getDisciplina().getCodigo());
+        
+        System.out.println("--------------------NOVO ALUNO--------------------------------");
+        
+        Aluno estudante1 = new Aluno();
+        estudante1.setNome ("Chico de Carvalho ");
+        estudante1.setMatricula ("01.2.3456");       
+        estudante1.setCurso (new Cursos("Engenharia de Computação", 0, 8)); //no caso o código do curso foi alterado pelo numero aleatório na classe Cursos
+        estudante1.setDisciplina (new Disciplinas("Programação de Computadores 2",60,"CSI102"));
+     
+        System.out.println("Nome: " + estudante1.getNome());
+        System.out.println("Matrícula: " + estudante1.getMatricula());
+        System.out.println("Curso: " + estudante1.getCurso().getNome());
+        System.out.println("Código do curso: " + estudante1.getCurso().getCodigo());  
+        System.out.println("Duração: " + estudante1.getCurso().getDuracao() + " semestres.");
+        System.out.println("----------------------------------------------------");
+        System.out.println("Disciplinas matriculadas: " + estudante1.getDisciplina().getNome());
+        System.out.println("Carga Horária Semestral: " + estudante1.getDisciplina().getCargaHoraria() + " horas.");
+        System.out.println("Código da disciplina: " + estudante1.getDisciplina().getCodigo());
+        
         
       
 	}

@@ -2,17 +2,34 @@ package exercicios_progr2;
 
 public class Aluno {
 
-	public static void main(String[] args) {
-		String nome; 
-		String matrícula;
-		Disciplinas disciplina;
-		Cursos curso;
+	private String nome;
+	private String matricula;
+	private Disciplinas disciplina;
+	private Cursos curso;
+	public String getNome() {
+		return nome;
 	}
-
-	public String nome;
-	public String matricula;
-	public Disciplinas disciplina;
-	public Cursos curso;
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+	public Disciplinas getDisciplina() {
+		return disciplina;
+	}
+	public void setDisciplina(Disciplinas disciplina) {
+		this.disciplina = disciplina;
+	}
+	public Cursos getCurso() {
+		return curso;
+	}
+	public void setCurso(Cursos curso) {
+		this.curso = curso;
+	}
 	
 	}
 
