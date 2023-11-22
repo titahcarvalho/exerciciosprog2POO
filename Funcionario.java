@@ -8,6 +8,7 @@ public class Funcionario {
 		private String telefone;
 		private String ctps;
 		private double salario;
+		//CONSTRUTOR?
 		public String getNome() {
 			return nome;
 		}

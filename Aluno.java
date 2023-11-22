@@ -6,6 +6,8 @@ public class Aluno {
 	private String matricula;
 	private Disciplinas disciplina;
 	private Cursos curso;
+	
+	//construtor?
 	public String getNome() {
 		return nome;
 	}
