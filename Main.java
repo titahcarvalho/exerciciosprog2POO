@@ -6,10 +6,11 @@ public class Main {
 		Aluno estudante = new Aluno();//esta sem construtor - no caso 
         estudante.setNome ("Angélica de Carvalho Teixeira");
         estudante.setMatricula ("22.2.8015");       
-        Cursos c =  new Cursos("Sistemas de Informação", 0, 8);
-        estudante.setCurso (c); //no caso o código do curso foi alterado pelo numero aleatório na classe Cursos
-        estudante.setDisciplina (new Disciplinas("Programação de Computadores 2",60,"CSI102"));
-     //fazer o mesmo com a disciplina
+        Cursos c =  new Cursos("Sistemas de Informação", 951, 8);
+        estudante.setCurso (c); 
+        Disciplinas a = new Disciplinas ("Programação de Computadores 2",60,"CSI102");
+        estudante.setDisciplina(a);
+    
         System.out.println("Nome: " + estudante.getNome());
         System.out.println("Matrícula: " + estudante.getMatricula());
         System.out.println("Curso: " + estudante.getCurso().getNome());
@@ -23,12 +24,13 @@ public class Main {
         System.out.println("-----------------------NOVO ALUNO-----------------------------");
         
         Aluno estudante1 = new Aluno();
-        Cursos d = new Cursos ("Engenharia de Computação", 0, 8);
+        Cursos d = new Cursos ("Engenharia de Computação", 753, 8);
         estudante1.setNome ("Chico de Carvalho ");
         estudante1.setMatricula ("01.2.3456");       
-        estudante1.setCurso (d); //no caso o código do curso foi alterado pelo numero aleatório na classe Cursos
-        estudante1.setDisciplina (new Disciplinas("Programação de Computadores 2",60,"CSI102"));
-     //fazer o mesmo com a disciplina
+        estudante1.setCurso (d); 
+        Disciplinas f = new Disciplinas("Programação de Computadores 2",60,"CSI102"); //criação de uma nova instancia para o curso e disciplina
+        estudante1.setDisciplina (f);
+    
         System.out.println("Nome: " + estudante1.getNome());
         System.out.println("Matrícula: " + estudante1.getMatricula());
         System.out.println("Curso: " + estudante1.getCurso().getNome());

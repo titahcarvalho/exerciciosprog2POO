@@ -5,6 +5,10 @@ public class Professor extends Funcionario{
 	
 	private String titulo;
 	private String areaDePesquisa;
+	
+	public Professor() {
+		
+	}
 	public String getTitulo() {
 		return titulo;
 	}

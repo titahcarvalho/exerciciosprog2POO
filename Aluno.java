@@ -7,7 +7,9 @@ public class Aluno {
 	private Disciplinas disciplina;
 	private Cursos curso;
 	
-	//construtor?
+	public Aluno () { //sem parametros
+				
+	}
 	public String getNome() {
 		return nome;
 	}

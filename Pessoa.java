@@ -5,6 +5,11 @@ public class Pessoa {
 	private String endereco;
 	private String telefone;
 	private String cpf;
+	
+	
+	public Pessoa() {
+		
+	}
 	public String getNome() {
 		return nome;
 	}
